@@ -1,16 +1,18 @@
+# maked by kockerpro94
+# first challance in network
 while True:
-    user_input = input("type to see this is ip IPv4 or IPv6: ")
-    user_input_number = len(user_input)
-    if '.' in user_input and user_input_number > 10:
+    input_Ter = input("type to see this is ip IPv4 or IPv6: ")
+    input_Ter_number = len(input_Ter)
+    if '.' in input_Ter and input_Ter_number > 10:
         print("This is an IPv4 address.")
         break
-    if '192.168.' in user_input:
+    if '192.168.' in input_Ter:
         print("This is a private IPv4 address.")
         break   
-    if user_input_number < 11 and ':' in user_input:
+    if input_Ter_number < 11 and ':' in input_Ter:
         print("This is an IPv6 address.")
         break
-    if user_input == 'exit':
+    if input_Ter == 'exit':
         print("Exiting the program.")
         break
     else:
